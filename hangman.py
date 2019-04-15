@@ -85,8 +85,7 @@ while True:
         engine.runAndWait()
         break
     elif hangmanNumber == 6:
-        print("You lose. Get rekt m8. The word you had so much trouble guessing was " + wordChoice + ". You just got beaten by a program written by a 13 year-old.")
-        engine.say("You lose. Get rekt mate. The word you had so much trouble guessing was " + wordChoice + ". You just got beaten by a program written by a 13 year-old.")
+        print("You lose. Get rekt m8. The word you had so much trouble guessing was " + wordChoice + ". You were just beaten by a program written by a 13 year-old.")
+        engine.say("You lose. Get rekt mate. The word you had so much trouble guessing was " + wordChoice + ". You were just beaten by a program written by a 13 year-old.")
         engine.runAndWait()
         break
-
