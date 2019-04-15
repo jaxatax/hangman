@@ -41,7 +41,6 @@ hangmen = [''' ___
 |  /|\\
 |  / \ ''']
 
-choose()
 numberOfCharacters = len(wordChoice)
 hangmanNumber = 0
 spaces = ["_" for i in range(numberOfCharacters)]
@@ -75,8 +74,8 @@ while True:
             index += 1
         guessed += letter
     else:
-        print("You got it wrong. Get rekt.")
-        engine.say("You got it wrong. Get rekt.")
+        print("You got it wrong. Get rekt m8.")
+        engine.say("You got it wrong. Get rekt mate.")
         engine.runAndWait()
         hangmanNumber += 1
         guessed += letter
@@ -86,7 +85,8 @@ while True:
         engine.runAndWait()
         break
     elif hangmanNumber == 6:
-        print("You lose. Get rekt m8.")
-        engine.say("You lose. Get rekt mate")
+        print("You lose. Get rekt m8. The word you had so much trouble guessing was " + wordChoice + ". You just got beaten by a program written by a 13 year-old.")
+        engine.say("You lose. Get rekt mate. The word you had so much trouble guessing was " + wordChoice + ". You just got beaten by a program written by a 13 year-old.")
         engine.runAndWait()
         break
+
